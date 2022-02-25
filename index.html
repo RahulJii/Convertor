@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BINARY / DECIMAL CONVERTER</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>BINARY / DECIMAL CONVERTER</h1>
+      <h2>Enter only whole numbers, that is, no periods or commas.</h2>
+    </header>
+    <main>
+      <article>
+        <h3>DECIMAL FOR BINARY</h3>
+        <input
+          oninput="convertToDecimal()"
+          type="number"
+          id="decimal"
+          placeholder="Enter only decimal numbers in this field. example: 123, 999"
+        />
+        <p id="binaryResult"></p>
+        <hr />
+        <h3>BINARY FOR DECIMAL</h3>
+        <input
+          oninput="convertToBinary()"
+          type="number"
+          id="binary"
+          placeholder="Enter only 0 and 1 in this field. example: 0101 111 100"
+        />
+        <p id="decimalResult"></p>
+      </article>
+      <article>
+        <h3>Attention</h3>
+        <p>
+          If values of types other than the types that were specified
+          immediately above are typed the results will be wrong, so to get the
+          desired / correct result type according to what was said in the start.
+        </p>
+        <h3>Binary system</h3>
+        <p>
+          The binary or base 2 system is a positional numbering system in that
+          all quantities are represented on the basis of two numbers, or that
+          is, zero and one.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <ul class="contacts">
+        <li><h4>CONTACT</h4></li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/rahul-kumar-b479b7150/"
+            ><i class="fab fa-linkedin-in"></i>linkedin.com/in/rahul-kumar</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/RahulJii"
+            ><i class="fab fa-github-alt"></i>github.com/RahulJii</a
+          >
+        </li>
+        <li>
+          <a href="mailto:rahul842387@gmail.com"
+            ><i class="fas fa-envelope"></i>rahul842387@gmail.com</a
+          >
+        </li>
+      </ul>
+      <p>DEVELOPED BY RAHULKUMAR</p>
+    </footer>
+    <script src="convertToDecimal.js"></script>
+    <script src="convertToBinary.js"></script>
+  </body>
+</html>
